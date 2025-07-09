@@ -1,0 +1,205 @@
+/* Fondo y fuente */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: radial-gradient(
+    circle at top left,
+    rgba(127, 230, 242, 0.15) 0%,
+    rgba(47, 146, 157, 0.1) 30%,
+    #1a1a1c 80%
+  );
+  background-color: #1a1a1c;
+  color: #F2F5EA;
+}
+
+.custom-navbar {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+.custom-navbar .navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link {
+  color: rgba(255, 255, 250, 0.6);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+  position: relative;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #91d6de;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-text .bi-star-fill {
+  color: #91d6de;
+  font-size: 1.3rem;
+}
+
+/* Hero de tipos */
+.hero-tipos {
+  min-height: 55vh;
+  color: #72cbd5;
+  padding: 2rem 2rem 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+}
+
+/* Títulos */
+.hero-tipos h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 800;
+  color: #72cbd5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-tipos p {
+  font-size: clamp(1rem, 3vw, 1.6rem);
+  color: #d6dbd2;
+  font-weight: 300;
+}
+
+.intro-cloud {
+  background-color: transparent !important;
+}
+
+.intro-cloud p {
+  font-size: 2.5rem;
+  font-weight: thinner;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #91D6DE;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Tarjetas */
+.card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  color: #f2f5ea;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(145, 214, 222, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 24px rgba(145, 214, 222, 0.2);
+}
+
+.card h5 {
+  color: #91d6de;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #d6dbd2;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+.bg-dark {
+  background-color: transparent !important;
+}
+
+.modelos {
+  background-color: transparent !important;
+}
+
+/* Iconos circulares */
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #00d1ff;
+  color: #1a1a1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+/* Footer */
+.custom-footer {
+  background-color: transparent;
+  color: #D6DBD2;
+  font-size: 0.85rem;
+}
+
+.custom-footer .footer-link {
+  color: #91D6DE;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.custom-footer .footer-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-tipos {
+    padding-top: 8rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .icon-circle {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  .card h5 {
+    font-size: 1.1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
